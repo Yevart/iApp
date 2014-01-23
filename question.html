@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 	    <meta name="viewport" content="width=device-width">
-        <title>Test</title>
+        <title>Test Question</title>
         <meta name="description" content="">
         <link rel="stylesheet" href="css/normalize.css"> <!-- стили h5bt и normalize -->
         <link rel="stylesheet" href="css/styles.css"> <!-- стили шаблона -->
@@ -33,30 +33,45 @@
                             <h1>Универсальный тест по профориентации</h1>
                         </header>
                     
-                    	<!-- Вступительный текст -->
-                    	<div class="anons">
-                        	<div class="block list">
-                                <p>В результате теста  вы получите описание особенностей вашей личности и перечень профессий, где люди вашего склада добиваются наибольшего успеха. Результаты теста не учитывают ваших интересов в той или иной области. Тест содержит 66 предложений. У каждого предложения есть два варианта окончания. Вам нужно выбрать вариант, который именно вам кажется наиболее подходящим.</p>
-                                <p>Тест построен на том, что все люди разные, думают по-разному,  имеют разные предпочтения и делают разные выборы. Поэтому в тесте нет правильных и неправильных ответов. </p>
+                    	<!-- блок пользователя -->
+                    	<div class="user">
+                        	<div class="block user">
+                                <p><strong>Константин Константинов</strong></p>
 							</div>
-                            <div class="block time">
-								<p>Время прохождения теста 10-15 минут</p>
-							</div>
-                            <div class="block arrow">
-                            	<p><strong>Перед началом тестирования введите свое имя и фамилию</strong></p>
+                        </div>
+                        
+                        <!-- форма вопроса -->
+                        <div class="questions">
+                        	<div class="question" id="question1">
+                                <div class="question-number">24.</div>
+                                <div class="question-text">Мои победы и мои поражения – это в большей степени результат / Мои победы и мои поражения – это в большей степени результат</div>
+                                <div class="answers">
+                                    <div class="answer"><a href="#"><span>Очень длинный ответ на две строки, очень длинный ответ на две строки</span></a></div>
+                                    <div class="answer"><a href="#"><span>Стечения обстоятельств</span></a></div>
+                                </div>
+                            </div>
+                        	<div class="question" id="question2">
+                                <div class="question-number">24.</div>
+                                <div class="question-text">Мои победы и мои поражения – это в большей степени результат</div>
+                                <div class="answers">
+                                    <div class="answer"><a href="#"><span>Очень длинный ответ на две строки, очень длинный ответ на две строки</span></a></div>
+                                    <div class="answer"><a href="#"><span>Стечения обстоятельств</span></a></div>
+                                </div>
                             </div>
                         </div>
                         
-                        <!-- -->
-                        <div class="userform">
-                        	<form>
-                            	<div class="firstname"><input type="text" name="firstname" placeholder="Имя"><span class="error">Введите своё имя</span></div>
-                            	<div class="surname"><input type="text" name="surname" placeholder="Фамилия"><span class="error">Введите свою фамилию</span></div>
-                            	<div class="email"><input type="text" name="email" placeholder="E-mail"><span class="error">Введите свой email в верном формате</span></div>
-                                <div class="submit"><input type="submit" value="Начать тест"></div>
-                            </form>
+                        <!-- полоса прогресса. ширина заполненной полосы высчитывается скриптом и задается в атрибуте style тэга .percent 
+                        	лучше ширину вычислять конечно в процентах, чтобы сохранить адаптивность, но для примера работы скрипта пока сделал в пх-->
+                        <div class="progress">
+                            <div class="bar"><div class="percent" style="width: 200px;"></div></div>
+                            <div class="stat">осталось <span>45</span> вопросов, <span>хороший</span> темп</div>
                         </div>
-                    
+						
+                        <!-- кнопки. предыдущий вопрос. -->
+                        <div class="question-buttons">
+                        	<div class="prevquestion"><a href="#">Предыдущий вопрос</a></div>
+                        </div>
+                                            
                     </div>
                 </div>
                 
